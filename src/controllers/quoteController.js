@@ -9,7 +9,6 @@ function getUsdQuote() {
     USD_QUOTE = 0;
     axios.get('https://economia.awesomeapi.com.br/all/USD-BRL')
         .then(usd => {
-            // console.log('USD: ', usd.data.USD.ask);
             USD_QUOTE = usd.data.USD.ask;
         })
         .catch(err => console.error(err));
@@ -43,9 +42,7 @@ module.exports = {
             if (!validate.validateData(crypto)) {
                 return res.send('Error when looking for cryptocurrency!');
             }
-
-            // console.log(USD_QUOTE);
-
+            
             let price = (crypto.price * USD_QUOTE);
             price = formatDigits(price);
 
