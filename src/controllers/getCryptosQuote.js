@@ -10,14 +10,13 @@ let cryptos = [];
 
 const INTERVAL = 1;
 const options = {
-    uri: process.env.URI_QUOTE,
+    uri: process.env.URI_CRYPTO_QUOTE,
     transform: function (body) {
         return cheerio.load(body);
     }
 };
 
 function loadData() {
-    // console.log(`Reading cryptos quote every ${INTERVAL} minute(s).`);
     rp(options)
         .then($ => {
             cryptos.length = 0;

@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const PORT = process.env.PORT || 4321;
+const PORT = process.env.PORT || 2000;
 
 const indexRoute = require('./src/routes/indexRoute');
 

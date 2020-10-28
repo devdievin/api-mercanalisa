@@ -1,6 +1,22 @@
+const axios = require('axios').default;
 const validate = require('../helpers/validate');
 const cryptosQuote = require('./getCryptosQuote');
-const usdQuote = require('./getUsdQuote');
+
+const INTERVAL = 1;
+let USD_QUOTE;
+
+function getUsdQuote() {
+    USD_QUOTE = 0;
+    axios.get('https://economia.awesomeapi.com.br/all/USD-BRL')
+        .then(usd => {
+            // console.log('USD: ', usd.data.USD.ask);
+            USD_QUOTE = usd.data.USD.ask;
+        })
+        .catch(err => console.error(err));
+}
+
+const readUsdQuote = setInterval(getUsdQuote, (INTERVAL * 60 * 1000));
+getUsdQuote();
 
 module.exports = {
 
@@ -8,7 +24,7 @@ module.exports = {
         try {
             const symbol = req.params.symbol;
             let crypto = cryptosQuote.cryptos.find(crypto => crypto.symbol === symbol);
-            
+
             if (!validate.validateData(crypto)) {
                 return res.send('Error when looking for cryptocurrency!');
             }
@@ -28,10 +44,9 @@ module.exports = {
                 return res.send('Error when looking for cryptocurrency!');
             }
 
-            let usdPrice = await usdQuote.usdPrice;
-            // console.log(usdPrice);
+            // console.log(USD_QUOTE);
 
-            let price = (crypto.price * usdPrice);
+            let price = (crypto.price * USD_QUOTE);
             price = formatDigits(price);
 
             let result = {
