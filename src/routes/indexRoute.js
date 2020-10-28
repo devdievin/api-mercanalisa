@@ -7,6 +7,8 @@ router.get('/', (req, res) => {
     res.send('Cryptocurrency quote API');
 });
 
-router.get('/crypto/:symbol', quoteController.getCrypto);
+// Routes cryptos quote
+router.get('/crypto/USD/:symbol', quoteController.getCryptoUSD);
+router.get('/crypto/BRL/:symbol', quoteController.getCryptoBRL);
 
 module.exports = router;
