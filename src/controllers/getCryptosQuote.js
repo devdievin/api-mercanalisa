@@ -32,15 +32,19 @@ function loadData() {
                 arrData.push(data);
             });
 
+            // console.log(arrData.length);
+
             // HERE IS THE SECOND ARRAY THAT CAPTURES ONLY CRYPTOCURRENCIES PRICES
             let arrPrices = [];
-            $('.rc-table-cell.font_weight_500___2Lmmi > div').each((i, item) => {
+            $('table > tbody > tr > td:nth-child(4)').each((i, item) => {
                 let price = $(item).find('a.cmc-link').text();
                 if (validate.validateData(price)) {
                     price = price.replace('$', '').replace(',', '');
                     arrPrices.push(price);
                 }
             });
+
+            // console.log(arrPrices.length);
 
             // HERE A CHECK OF THE 2 AUXILIARY ARRAYS IS MADE, ASSEMBLING AN OBJECT AND ADDING IT
             // IN THE MAIN ARRAY

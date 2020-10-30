@@ -57,7 +57,7 @@ module.exports = {
             console.error(err);
         }
     },
-
+    
 }
 
 function formatDigits(value) {
