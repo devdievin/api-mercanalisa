@@ -2,7 +2,6 @@ const axios = require('axios').default;
 const validate = require('../helpers/validate');
 const cryptosQuote = require('./getCryptosQuote');
 
-const INTERVAL = 1;
 let USD_QUOTE;
 
 function getUsdQuote() {
@@ -14,8 +13,8 @@ function getUsdQuote() {
         .catch(err => console.error(err));
 }
 
-const readUsdQuote = setInterval(getUsdQuote, (INTERVAL * 60 * 1000));
 getUsdQuote();
+const readUsdQuote = setInterval(getUsdQuote, (process.env.INTERVAL * 60 * 1000));
 
 module.exports = {
 
@@ -25,10 +24,18 @@ module.exports = {
             let crypto = cryptosQuote.cryptos.find(crypto => crypto.symbol === symbol);
 
             if (!validate.validateData(crypto)) {
-                return res.send('Error when looking for cryptocurrency!');
+                return res.send({ status: "ERROR", message: "Error when looking for cryptocurrency!" });
             }
 
-            return res.send(crypto);
+            let result = {
+                position: crypto.position,
+                name: crypto.name,
+                symbol: crypto.symbol,
+                price: crypto.price,
+                currency: "USD"
+            };
+
+            return res.send(result);
         } catch (err) {
             console.error(err);
         }
@@ -40,9 +47,9 @@ module.exports = {
             let crypto = cryptosQuote.cryptos.find(crypto => crypto.symbol === symbol);
 
             if (!validate.validateData(crypto)) {
-                return res.send('Error when looking for cryptocurrency!');
+                return res.send({ status: "ERROR", message: "Error when looking for cryptocurrency!" });
             }
-            
+
             let price = (crypto.price * USD_QUOTE);
             price = formatDigits(price);
 
@@ -50,14 +57,23 @@ module.exports = {
                 position: crypto.position,
                 name: crypto.name,
                 symbol: crypto.symbol,
-                price: price
+                price: price,
+                currency: "BRL"
             };
             return res.send(result);
         } catch (err) {
             console.error(err);
         }
     },
-    
+
+    async getDollarQuote(req, res) {
+        try {
+            return res.send({ currency: "USD-BRL", price: USD_QUOTE });
+        } catch (err) {
+            console.error(err);
+        }
+    }
+
 }
 
 function formatDigits(value) {
@@ -67,5 +83,6 @@ function formatDigits(value) {
     } else {
         digits = 6;
     }
+
     return value.toFixed(digits);
 }

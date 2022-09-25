@@ -9,7 +9,6 @@ dotenv.config({ path: './src/config/.env' });
 // Main cryptocurrency array
 let cryptos = [];
 
-const INTERVAL = 1;
 const options = {
     uri: process.env.URI_CRYPTO_QUOTE,
     transform: function (body) {
@@ -70,7 +69,7 @@ function loadData() {
 
 loadData();
 
-const readData = setInterval(loadData, (INTERVAL * 60 * 1000));
+const readData = setInterval(loadData, (process.env.INTERVAL * 60 * 1000));
 
 // clearInterval(readData);
 
