@@ -21,4 +21,8 @@ router.get('/crypto/BRL/:symbol', quoteController.getCryptoBRL);
 // Routes fiat coin quote
 router.get('/fiat/USD', quoteController.getDollarQuote);
 
+router.use((req, res, next) => {
+    res.status(404).send({ error: "Sorry can't find that! This route does not exist.", status: "404" })
+})
+
 module.exports = router;

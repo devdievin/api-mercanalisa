@@ -20,8 +20,8 @@ module.exports = {
 
     async getCryptoUSD(req, res) {
         try {
-            const symbol = req.params.symbol;
-            let crypto = cryptosQuote.cryptos.find(crypto => crypto.symbol === symbol);
+            const { symbol } = req.params;
+            let crypto = cryptosQuote.cryptos.find(crypto => crypto.symbol === symbol.toUpperCase());
 
             if (!validate.validateData(crypto)) {
                 return res.send({ status: "ERROR", message: "Error when looking for cryptocurrency!" });
@@ -32,7 +32,8 @@ module.exports = {
                 name: crypto.name,
                 symbol: crypto.symbol,
                 price: crypto.price,
-                currency: "USD"
+                currency: "USD",
+                timestamp: getCurrentDate()
             };
 
             return res.send(result);
@@ -43,8 +44,8 @@ module.exports = {
 
     async getCryptoBRL(req, res) {
         try {
-            const symbol = req.params.symbol;
-            let crypto = cryptosQuote.cryptos.find(crypto => crypto.symbol === symbol);
+            const { symbol } = req.params;
+            let crypto = cryptosQuote.cryptos.find(crypto => crypto.symbol === symbol.toUpperCase());
 
             if (!validate.validateData(crypto)) {
                 return res.send({ status: "ERROR", message: "Error when looking for cryptocurrency!" });
@@ -58,7 +59,8 @@ module.exports = {
                 name: crypto.name,
                 symbol: crypto.symbol,
                 price: price,
-                currency: "BRL"
+                currency: "BRL",
+                timestamp: getCurrentDate()
             };
             return res.send(result);
         } catch (err) {
@@ -68,7 +70,13 @@ module.exports = {
 
     async getDollarQuote(req, res) {
         try {
-            return res.send({ currency: "USD-BRL", price: USD_QUOTE });
+            const fiat_coin = {
+                currency: "USD-BRL",
+                name: "Dólar Americano/Real Brasileiro",
+                price: USD_QUOTE,
+                timestamp: getCurrentDate()
+            };
+            return res.send(fiat_coin);
         } catch (err) {
             console.error(err);
         }
@@ -85,4 +93,9 @@ function formatDigits(value) {
     }
 
     return value.toFixed(digits);
+}
+
+function getCurrentDate() {
+    const current_date = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
+    return current_date;
 }

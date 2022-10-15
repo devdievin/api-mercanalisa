@@ -18,6 +18,4 @@ app.use(bodyParser.json());
 
 app.use('/', indexRoute);
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+app.listen(PORT, () => { console.log(`Server running on port ${PORT}`); });

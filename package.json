@@ -1,7 +1,7 @@
 {
-  "name": "api-quote",
-  "version": "1.0.0",
-  "description": "api for finance quote",
+  "name": "api-mercanalisa",
+  "version": "1.2.0",
+  "description": "Api for price quotes",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diêvano Dantas Moraes",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.0",
