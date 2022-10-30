@@ -1,11 +1,11 @@
 # Api Mercanalisa
-> Projeto construído em Node JS / Express.
+> Projeto construído em Node JS/Express.
 
 Api para cotação de preços de mais de 100 criptomoedas e moedas fiat. 
 
 Veja a api em funcionamento aqui: https://api-mercanalisa.herokuapp.com
 
-imagem aqui
+![Página Principal](./src/public/images/screen0.svg "Página Principal")
 
 ## Sobre
 
@@ -29,11 +29,23 @@ Exemplo:
  https://api-mercanalisa.herokuapp.com/crypto/USD/BTC
 ```
 
-Tabela das criptomoedas disponíveis aqui
+Tabela com algumas das criptomoedas disponíveis:
+| **#** | **Criptomoedas** | **Símbolo** |
+|:-----:|:----------------:|:-----------:|
+| **1** | Bitcoin          |     BTC     |
+| **2** | Ethereum         |     ETH     |
+| **3** | Tether           |     USDT    |
+| **4** | XRP              |     XRP     |
+| **5** | Litecoin         |     LCT     |
+| **6** | ChainLink        |     LINK    |
+| **7** | Bitcoin Cash     |     BCH     |
+|   ~   | Continua...      |     ...     |
+
+Veja a tabela completa aqui: [Tabela Criptomoedas](https://api-mercanalisa.herokuapp.com/docs).
 
 ### #Moedas Fiat
 
-Para usar a api de cotação de moedas fiat utilize o path **/fiat** em seguida a moeda que deseja consultar.
+Para usar a api de cotação de moedas fiat utilize o path **/fiat**, em seguida o símbolo da moeda que deseja consultar.
 
 Exemplo:
 ```
@@ -53,9 +65,3 @@ Projeto foi construído com as seguintes tecnologias:
 - Node.js
 - Express
 - Cheerio
-
-## License
-
-MIT
-
-   [Api Mercanalisa]: <https://google.com.br>
