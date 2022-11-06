@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const path = require('path');
 
 const PORT = process.env.PORT || 2000;
@@ -7,6 +8,8 @@ const PORT = process.env.PORT || 2000;
 const indexRoute = require('./src/routes/indexRoute');
 
 const app = express();
+
+app.use(cors());
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './src/views'));

@@ -12,13 +12,12 @@
   "author": "Diêvano Dantas Moraes",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.4",
     "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "request": "^2.88.2",
-    "request-promise": "^4.2.6"
+    "express": "^4.17.1"
   }
 }

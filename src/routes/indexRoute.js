@@ -1,5 +1,5 @@
 const express = require('express');
-const quoteController = require('../controllers/quoteController');
+const { getCryptoUSD, getCryptoBRL, getDollarQuote } = require('../controllers/cryptoController');
 const cryptosLibrary = require('../helpers/cryptosLibrary');
 
 const router = express.Router();
@@ -15,11 +15,11 @@ router.get('/docs', (req, res) => {
 });
 
 // Routes cryptos quote
-router.get('/crypto/USD/:symbol', quoteController.getCryptoUSD);
-router.get('/crypto/BRL/:symbol', quoteController.getCryptoBRL);
+router.get('/crypto/USD/:symbol', getCryptoUSD);
+router.get('/crypto/BRL/:symbol', getCryptoBRL);
 
 // Routes fiat coin quote
-router.get('/fiat/USD', quoteController.getDollarQuote);
+router.get('/fiat/USD', getDollarQuote);
 
 router.use((req, res, next) => {
     res.status(404).send({ error: "Sorry can't find that! This route does not exist.", status: "404" })
