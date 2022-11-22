@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { cryptoFactory } from "./factories/cryptoFactory";
 import { fiatFactory } from "./factories/fiatFactory";
-import { testFactory } from "./factories/testFactory";
+import { fileFactory } from "./factories/fileFactory";
 import { route404 } from "./middlewares/route";
 
 const routes = Router();
@@ -12,8 +12,8 @@ routes.get('/', (req, res) => {
 });
 
 // Documentation route
-routes.get('/docs', async (req, res) => {
-    res.render('docs', { url_api: process.env.URL_API, cryptos: await testFactory().recoverListCrypto() });
+routes.get('/docs', (req, res) => {
+    res.render('docs', { url_api: process.env.URL_API, cryptos: fileFactory().getCryptosList() });
 });
 
 // Routes cryptos quote

@@ -1,7 +1,7 @@
 # Api Mercanalisa
 > Projeto construído em Node JS/Express.
 
-Api para cotação de preços de mais de 100 criptomoedas e moedas fiat. 
+Api para cotação de mercado com mais de 100 criptomoedas diferentes. Retorna a cotação em dólar americano (USD) ou em real brasileiro (BRL).
 
 Veja a api em funcionamento aqui: https://api-mercanalisa.vercel.app
 
@@ -34,10 +34,10 @@ Tabela com algumas das criptomoedas disponíveis:
 | **1** | Bitcoin          |     BTC     |
 | **2** | Ethereum         |     ETH     |
 | **3** | Tether           |     USDT    |
-| **4** | XRP              |     XRP     |
-| **5** | Litecoin         |     LCT     |
-| **6** | ChainLink        |     LINK    |
-| **7** | Bitcoin Cash     |     BCH     |
+| **4** | USD Coin         |     USDC    |
+| **5** | BNB              |     BNB     |
+| **6** | Binance USD      |     BUSD    |
+| **7** | XRP              |     XRP     |
 |   ~   | Continua...      |     ...     |
 
 Veja a tabela completa aqui: [Tabela Criptomoedas](https://api-mercanalisa.vercel.app/docs).
@@ -54,7 +54,7 @@ Exemplo:
 Tabela das moedas fiat disponíveis:
 | **#** | **Moedas Fiat** | **Símbolo** |
 |:-----:|:---------------:|:-----------:|
-| **1** | Dólar           |     USD     |
+| **1** | Dólar Americano |     USD     |
 
 ## Tecnologias
 

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getCurrentDate, getDollarValue } from "../helpers/tools";
+import { getDollarValue, getTimestamp } from "../helpers/tools";
 import { validateData } from "../helpers/validate";
 
 class FiatController {
@@ -16,7 +16,7 @@ class FiatController {
                 currency: "USD-BRL",
                 name: "Dólar Americano/Real Brasileiro",
                 price: dollar,
-                timestamp: getCurrentDate()
+                timestamp: getTimestamp()
             };
 
             return res.status(200).json(fiat_coin);

@@ -2,13 +2,13 @@ import { Request, Response } from "express";
 import { Crypto } from '../entities/Crypto';
 import { CryptoService } from "../services/CryptoService";
 import { validateData } from '../helpers/validate';
-import { formatDigits, getCurrentDate, getDollarValue } from '../helpers/tools';
+import { formatDigits, getDollarValue, getTimestamp } from '../helpers/tools';
 import { Currencies } from "../helpers/currencies";
 
 interface ICryptoResponse {
     currency: string,
     crypto: Crypto,
-    timestamp: string
+    timestamp: number
 }
 
 interface IDataProps {
@@ -39,7 +39,7 @@ class CryptosController {
             const response: ICryptoResponse = {
                 currency: Currencies.USD,
                 crypto: crypto!,
-                timestamp: getCurrentDate()
+                timestamp: getTimestamp()
             };
 
             return res.status(200).json(response);
@@ -67,7 +67,7 @@ class CryptosController {
                     price: formatDigits(price.toString()),
                     marketCap: formatDigits(marketCap.toString())
                 },
-                timestamp: getCurrentDate()
+                timestamp: getTimestamp()
             };
 
             return res.status(200).json(response);
