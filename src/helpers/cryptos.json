@@ -1,1 +1,802 @@
-[{"rank":1,"symbol":"BTC","name":"Bitcoin","price":"15776.56","variation":"−1.40%","marketCap":"303.126B"},{"rank":2,"symbol":"ETH","name":"Ethereum","price":"1098.53","variation":"−2.01%","marketCap":"134.431B"},{"rank":3,"symbol":"USDT","name":"Tether","price":"0.99848750","variation":"−0.05%","marketCap":"65.785B"},{"rank":4,"symbol":"USDC","name":"USD Coin","price":"0.999923","variation":"0.00%","marketCap":"44.304B"},{"rank":5,"symbol":"BNB","name":"BNB","price":"255.7256","variation":"−0.89%","marketCap":"40.909B"},{"rank":6,"symbol":"BUSD","name":"Binance USD","price":"1.000205","variation":"0.08%","marketCap":"22.814B"},{"rank":7,"symbol":"XRP","name":"XRP","price":"0.35801","variation":"2.01%","marketCap":"18.007B"},{"rank":8,"symbol":"ADA","name":"Cardano","price":"0.304558","variation":"−0.03%","marketCap":"10.483B"},{"rank":9,"symbol":"DOGE","name":"Dogecoin","price":"0.07484750","variation":"0.70%","marketCap":"9.93B"},{"rank":10,"symbol":"MATIC","name":"Polygon","price":"0.7961","variation":"1.84%","marketCap":"6.953B"},{"rank":11,"symbol":"DOT","name":"Polkadot","price":"5.1617","variation":"−0.68%","marketCap":"5.876B"},{"rank":12,"symbol":"DAI","name":"Dai","price":"1.00010","variation":"−0.00%","marketCap":"5.842B"},{"rank":13,"symbol":"TRX","name":"TRON","price":"0.05199103","variation":"4.98%","marketCap":"4.792B"},{"rank":14,"symbol":"SHIB","name":"Shiba Inu","price":"0.00000846","variation":"−0.70%","marketCap":"4.645B"},{"rank":15,"symbol":"LTC","name":"Litecoin","price":"61.383558","variation":"−2.70%","marketCap":"4.399B"},{"rank":16,"symbol":"SOL","name":"Solana","price":"11.6072","variation":"−1.30%","marketCap":"4.209B"},{"rank":17,"symbol":"UNI","name":"Uniswap","price":"5.1570114","variation":"−2.44%","marketCap":"3.931B"},{"rank":18,"symbol":"WBTC","name":"Wrapped Bitcoin","price":"15704.9595","variation":"−1.36%","marketCap":"3.698B"},{"rank":19,"symbol":"LEO","name":"UNUS SED LEO","price":"3.8392","variation":"−12.71%","marketCap":"3.662B"},{"rank":20,"symbol":"AVAX","name":"Avalanche","price":"11.7835995","variation":"−0.38%","marketCap":"3.542B"},{"rank":21,"symbol":"LINK","name":"Chainlink","price":"5.9137063","variation":"4.26%","marketCap":"2.907B"},{"rank":22,"symbol":"ATOM","name":"Cosmos","price":"9.0917483","variation":"1.13%","marketCap":"2.604B"},{"rank":23,"symbol":"ETC","name":"Ethereum Classic","price":"18.008168","variation":"1.32%","marketCap":"2.485B"},{"rank":24,"symbol":"XMR","name":"Monero","price":"126.167428","variation":"−1.97%","marketCap":"2.297B"},{"rank":25,"symbol":"XLM","name":"Stellar","price":"0.08441359","variation":"−0.29%","marketCap":"2.169B"},{"rank":26,"symbol":"TON","name":"Toncoin","price":"1.7189","variation":"1.05%","marketCap":"2.099B"},{"rank":27,"symbol":"BCH","name":"Bitcoin Cash","price":"104.01993","variation":"0.46%","marketCap":"2.001B"},{"rank":28,"symbol":"ALGO","name":"Algorand","price":"0.23653043","variation":"−3.28%","marketCap":"1.682B"},{"rank":29,"symbol":"CRO","name":"Cronos","price":"0.06366","variation":"0.76%","marketCap":"1.608B"},{"rank":30,"symbol":"FIL","name":"Filecoin","price":"4.1574615","variation":"1.19%","marketCap":"1.347B"},{"rank":31,"symbol":"NEAR","name":"NEAR Protocol","price":"1.53091235","variation":"1.66%","marketCap":"1.269B"},{"rank":32,"symbol":"VET","name":"VeChain","price":"0.01746627","variation":"−0.16%","marketCap":"1.266B"},{"rank":33,"symbol":"QNT","name":"Quant","price":"103.035205","variation":"−3.87%","marketCap":"1.244B"},{"rank":34,"symbol":"OKB","name":"OKB","price":"19.920","variation":"0.55%","marketCap":"1.195B"},{"rank":35,"symbol":"FLOW","name":"Flow","price":"1.11398432","variation":"−1.15%","marketCap":"1.154B"},{"rank":36,"symbol":"CHZ","name":"Chiliz","price":"0.17434060","variation":"−6.86%","marketCap":"1.07B"},{"rank":37,"symbol":"HBAR","name":"Hedera","price":"0.04598574","variation":"1.12%","marketCap":"1.056B"},{"rank":38,"symbol":"ICP","name":"Internet Computer","price":"3.572","variation":"1.82%","marketCap":"979.436M"},{"rank":39,"symbol":"APE","name":"ApeCoin","price":"3.15622743","variation":"7.49%","marketCap":"968.567M"},{"rank":40,"symbol":"EGLD","name":"Elrond","price":"40.430119","variation":"−2.05%","marketCap":"958.985M"},{"rank":41,"symbol":"USDP","name":"Pax Dollar","price":"1.00156","variation":"0.20%","marketCap":"947.118M"},{"rank":42,"symbol":"XCN","name":"Chain","price":"0.04250","variation":"−3.76%","marketCap":"912.593M"},{"rank":43,"symbol":"EOS","name":"EOS","price":"0.8476562","variation":"−1.42%","marketCap":"911.087M"},{"rank":44,"symbol":"LUNC","name":"Terra Classic","price":"0.000150520","variation":"−0.02%","marketCap":"901.492M"},{"rank":45,"symbol":"XTZ","name":"Tezos","price":"0.93250690","variation":"−1.80%","marketCap":"855.121M"},{"rank":46,"symbol":"TUSD","name":"TrueUSD","price":"0.98401","variation":"−2.26%","marketCap":"841.387M"},{"rank":47,"symbol":"THETA","name":"Theta Network","price":"0.8225649","variation":"−0.83%","marketCap":"822.565M"},{"rank":48,"symbol":"TWT","name":"Trust Wallet Token","price":"1.91179360","variation":"−3.43%","marketCap":"796.549M"},{"rank":49,"symbol":"SAND","name":"The Sandbox","price":"0.53267733","variation":"1.61%","marketCap":"798.734M"},{"rank":50,"symbol":"AAVE","name":"Aave","price":"55.113054","variation":"−1.05%","marketCap":"776.719M"},{"rank":51,"symbol":"HT","name":"Huobi Token","price":"4.7855","variation":"12.21%","marketCap":"733.893M"},{"rank":52,"symbol":"USDD","name":"USDD","price":"0.99187","variation":"0.42%","marketCap":"719.435M"},{"rank":53,"symbol":"BSV","name":"Bitcoin SV","price":"37.29","variation":"−1.14%","marketCap":"717.123M"},{"rank":54,"symbol":"MANA","name":"Decentraland","price":"0.37299648","variation":"−0.13%","marketCap":"691.94M"},{"rank":56,"symbol":"KCS","name":"KuCoin Token","price":"6.510","variation":"−4.11%","marketCap":"640.453M"},{"rank":57,"symbol":"MKR","name":"Maker","price":"639.254432","variation":"0.38%","marketCap":"624.955M"},{"rank":58,"symbol":"BTT","name":"BitTorrent-New","price":"0.00000065","variation":"0.00%","marketCap":"614.462M"},{"rank":59,"symbol":"AXS","name":"Axie Infinity","price":"6.454196","variation":"2.39%","marketCap":"620.857M"},{"rank":60,"symbol":"GUSD","name":"Gemini Dollar","price":"0.998822","variation":"−0.48%","marketCap":"614.257M"},{"rank":61,"symbol":"ZEC","name":"Zcash","price":"37.420707","variation":"0.26%","marketCap":"589.462M"},{"rank":62,"symbol":"MIOTA","name":"IOTA","price":"0.21072334","variation":"1.16%","marketCap":"585.712M"},{"rank":63,"symbol":"BIT","name":"BitDAO","price":"0.2737","variation":"−2.46%","marketCap":"572.292M"},{"rank":64,"symbol":"PAXG","name":"PAX Gold","price":"1732.567437","variation":"−0.34%","marketCap":"563.447M"},{"rank":65,"symbol":"XEC","name":"eCash","price":"0.00002790","variation":"−0.29%","marketCap":"536.568M"},{"rank":66,"symbol":"CAKE","name":"PancakeSwap","price":"3.6194603","variation":"−2.09%","marketCap":"527.496M"},{"rank":67,"symbol":"APT","name":"Aptos","price":"4.00543871","variation":"1.98%","marketCap":"520.707M"},{"rank":68,"symbol":"SNX","name":"Synthetix","price":"1.6091727","variation":"−0.75%","marketCap":"493.255M"},{"rank":69,"symbol":"KLAY","name":"Klaytn","price":"0.16107217","variation":"−0.23%","marketCap":"486.286M"},{"rank":70,"symbol":"NEO","name":"Neo","price":"6.410323","variation":"0.35%","marketCap":"452.177M"},{"rank":71,"symbol":"BNX","name":"BinaryX","price":"159.004087","variation":"3.36%","marketCap":"443.03M"},{"rank":72,"symbol":"FTM","name":"Fantom","price":"0.169925","variation":"1.80%","marketCap":"432.46M"},{"rank":73,"symbol":"FEI","name":"Fei USD","price":"0.9952","variation":"0.49%","marketCap":"422.956M"},{"rank":74,"symbol":"MINA","name":"Mina","price":"0.51598503","variation":"−0.39%","marketCap":"386.359M"},{"rank":75,"symbol":"DASH","name":"Dash","price":"34.702209","variation":"2.75%","marketCap":"382.184M"},{"rank":76,"symbol":"NEXO","name":"Nexo","price":"0.67496701","variation":"0.86%","marketCap":"377.982M"},{"rank":77,"symbol":"GRT","name":"The Graph","price":"0.05368844","variation":"−3.24%","marketCap":"370.45M"},{"rank":78,"symbol":"RUNE","name":"THORChain","price":"1.1024343","variation":"−1.58%","marketCap":"364.562M"},{"rank":79,"symbol":"GT","name":"GateToken","price":"3.3605","variation":"−3.50%","marketCap":"363.825M"},{"rank":80,"symbol":"LDO","name":"Lido DAO","price":"1.10332822","variation":"1.32%","marketCap":"345.288M"},{"rank":81,"symbol":"ETHW","name":"ETHPoW (IOU)","price":"3.1689","variation":"−0.53%","marketCap":"339.893M"},{"rank":82,"symbol":"GMX","name":"GMX","price":"41.097444","variation":"2.34%","marketCap":"328.397M"},{"rank":83,"symbol":"BAT","name":"Basic Attention Token","price":"0.21773169","variation":"1.62%","marketCap":"325.657M"},{"rank":84,"symbol":"1INCH","name":"1inch Network","price":"0.50332249","variation":"2.09%","marketCap":"309.31M"},{"rank":85,"symbol":"LRC","name":"Loopring","price":"0.22847651","variation":"0.17%","marketCap":"303.904M"},{"rank":86,"symbol":"AR","name":"Arweave","price":"9.0011379","variation":"−1.86%","marketCap":"300.59M"},{"rank":87,"symbol":"XDC","name":"XDC Network","price":"0.024301","variation":"−1.83%","marketCap":"299.024M"},{"rank":88,"symbol":"IMX","name":"Immutable X","price":"0.42961908","variation":"6.89%","marketCap":"291.902M"},{"rank":89,"symbol":"CSPR","name":"Casper","price":"0.027717","variation":"2.59%","marketCap":"291.583M"},{"rank":90,"symbol":"STX","name":"Stacks","price":"0.21376777","variation":"−3.51%","marketCap":"287.446M"},{"rank":91,"symbol":"OSMO","name":"Osmosis","price":"1.01870264","variation":"−0.81%","marketCap":"287.747M"},{"rank":92,"symbol":"HNT","name":"Helium","price":"2.1717","variation":"−5.24%","marketCap":"284.677M"},{"rank":93,"symbol":"ZIL","name":"Zilliqa","price":"0.02088673","variation":"1.60%","marketCap":"283.258M"},{"rank":94,"symbol":"ENJ","name":"Enjin Coin","price":"0.28278384","variation":"−0.25%","marketCap":"282.784M"},{"rank":95,"symbol":"XEM","name":"NEM","price":"0.03054546","variation":"3.68%","marketCap":"274.909M"},{"rank":96,"symbol":"KAVA","name":"Kava","price":"0.8311433","variation":"3.92%","marketCap":"272.734M"},{"rank":97,"symbol":"COMP","name":"Compound","price":"37.432231","variation":"1.25%","marketCap":"272.026M"},{"rank":98,"symbol":"CRV","name":"Curve DAO Token","price":"0.50885916","variation":"0.39%","marketCap":"270.501M"},{"rank":99,"symbol":"DCR","name":"Decred","price":"18.560455","variation":"−0.67%","marketCap":"269.557M"},{"rank":100,"symbol":"CVX","name":"Convex Finance","price":"3.5439609","variation":"−2.37%","marketCap":"250.065M"},{"rank":101,"symbol":"HOT","name":"Holo","price":"0.001437","variation":"−0.83%","marketCap":"249.094M"}]
+[
+    {
+        "rank": 1,
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "price": "16106.69",
+        "variation": "0.83%",
+        "marketCap": "309.479B"
+    },
+    {
+        "rank": 2,
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "price": "1123.77",
+        "variation": "2.01%",
+        "marketCap": "137.52B"
+    },
+    {
+        "rank": 3,
+        "symbol": "USDT",
+        "name": "Tether",
+        "price": "0.99915250",
+        "variation": "0.07%",
+        "marketCap": "65.451B"
+    },
+    {
+        "rank": 4,
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "price": "0.99976000",
+        "variation": "−0.01%",
+        "marketCap": "44.155B"
+    },
+    {
+        "rank": 5,
+        "symbol": "BNB",
+        "name": "BNB",
+        "price": "262.4277",
+        "variation": "3.17%",
+        "marketCap": "41.981B"
+    },
+    {
+        "rank": 6,
+        "symbol": "BUSD",
+        "name": "Binance USD",
+        "price": "1.000072",
+        "variation": "0.00%",
+        "marketCap": "22.776B"
+    },
+    {
+        "rank": 7,
+        "symbol": "XRP",
+        "name": "XRP",
+        "price": "0.37253",
+        "variation": "4.46%",
+        "marketCap": "18.738B"
+    },
+    {
+        "rank": 8,
+        "symbol": "ADA",
+        "name": "Cardano",
+        "price": "0.309868",
+        "variation": "2.48%",
+        "marketCap": "10.666B"
+    },
+    {
+        "rank": 9,
+        "symbol": "DOGE",
+        "name": "Dogecoin",
+        "price": "0.07729",
+        "variation": "5.13%",
+        "marketCap": "10.253B"
+    },
+    {
+        "rank": 10,
+        "symbol": "MATIC",
+        "name": "Polygon",
+        "price": "0.8419",
+        "variation": "7.12%",
+        "marketCap": "7.353B"
+    },
+    {
+        "rank": 11,
+        "symbol": "DOT",
+        "name": "Polkadot",
+        "price": "5.2209",
+        "variation": "1.12%",
+        "marketCap": "5.993B"
+    },
+    {
+        "rank": 12,
+        "symbol": "DAI",
+        "name": "Dai",
+        "price": "0.99987",
+        "variation": "−0.02%",
+        "marketCap": "5.84B"
+    },
+    {
+        "rank": 13,
+        "symbol": "LTC",
+        "name": "Litecoin",
+        "price": "68.804306",
+        "variation": "11.96%",
+        "marketCap": "4.931B"
+    },
+    {
+        "rank": 14,
+        "symbol": "SHIB",
+        "name": "Shiba Inu",
+        "price": "0.00000866",
+        "variation": "2.36%",
+        "marketCap": "4.755B"
+    },
+    {
+        "rank": 15,
+        "symbol": "TRX",
+        "name": "TRON",
+        "price": "0.05025027",
+        "variation": "−1.17%",
+        "marketCap": "4.631B"
+    },
+    {
+        "rank": 16,
+        "symbol": "SOL",
+        "name": "Solana",
+        "price": "11.7903",
+        "variation": "0.95%",
+        "marketCap": "4.277B"
+    },
+    {
+        "rank": 17,
+        "symbol": "UNI",
+        "name": "Uniswap",
+        "price": "5.2327139",
+        "variation": "0.95%",
+        "marketCap": "3.988B"
+    },
+    {
+        "rank": 18,
+        "symbol": "WBTC",
+        "name": "Wrapped Bitcoin",
+        "price": "16047.8065",
+        "variation": "0.96%",
+        "marketCap": "3.779B"
+    },
+    {
+        "rank": 19,
+        "symbol": "AVAX",
+        "name": "Avalanche",
+        "price": "12.1611747",
+        "variation": "2.65%",
+        "marketCap": "3.656B"
+    },
+    {
+        "rank": 20,
+        "symbol": "LEO",
+        "name": "UNUS SED LEO",
+        "price": "3.8130",
+        "variation": "−2.18%",
+        "marketCap": "3.637B"
+    },
+    {
+        "rank": 21,
+        "symbol": "LINK",
+        "name": "Chainlink",
+        "price": "6.3433689",
+        "variation": "11.61%",
+        "marketCap": "3.118B"
+    },
+    {
+        "rank": 22,
+        "symbol": "ATOM",
+        "name": "Cosmos",
+        "price": "9.3014475",
+        "variation": "3.58%",
+        "marketCap": "2.664B"
+    },
+    {
+        "rank": 23,
+        "symbol": "ETC",
+        "name": "Ethereum Classic",
+        "price": "18.250893",
+        "variation": "4.06%",
+        "marketCap": "2.518B"
+    },
+    {
+        "rank": 24,
+        "symbol": "XMR",
+        "name": "Monero",
+        "price": "130.331291",
+        "variation": "1.48%",
+        "marketCap": "2.373B"
+    },
+    {
+        "rank": 25,
+        "symbol": "XLM",
+        "name": "Stellar",
+        "price": "0.08616477",
+        "variation": "2.25%",
+        "marketCap": "2.214B"
+    },
+    {
+        "rank": 26,
+        "symbol": "TON",
+        "name": "Toncoin",
+        "price": "1.7245",
+        "variation": "−0.19%",
+        "marketCap": "2.106B"
+    },
+    {
+        "rank": 27,
+        "symbol": "BCH",
+        "name": "Bitcoin Cash",
+        "price": "107.30174",
+        "variation": "5.14%",
+        "marketCap": "2.064B"
+    },
+    {
+        "rank": 28,
+        "symbol": "ALGO",
+        "name": "Algorand",
+        "price": "0.23944951",
+        "variation": "−2.04%",
+        "marketCap": "1.703B"
+    },
+    {
+        "rank": 29,
+        "symbol": "CRO",
+        "name": "Cronos",
+        "price": "0.06374",
+        "variation": "−1.35%",
+        "marketCap": "1.61B"
+    },
+    {
+        "rank": 30,
+        "symbol": "FIL",
+        "name": "Filecoin",
+        "price": "4.2827977",
+        "variation": "4.06%",
+        "marketCap": "1.388B"
+    },
+    {
+        "rank": 31,
+        "symbol": "NEAR",
+        "name": "NEAR Protocol",
+        "price": "1.60859200",
+        "variation": "9.59%",
+        "marketCap": "1.334B"
+    },
+    {
+        "rank": 32,
+        "symbol": "VET",
+        "name": "VeChain",
+        "price": "0.01771931",
+        "variation": "0.62%",
+        "marketCap": "1.285B"
+    },
+    {
+        "rank": 33,
+        "symbol": "QNT",
+        "name": "Quant",
+        "price": "105.91150400",
+        "variation": "1.98%",
+        "marketCap": "1.279B"
+    },
+    {
+        "rank": 34,
+        "symbol": "OKB",
+        "name": "OKB",
+        "price": "20.138",
+        "variation": "1.56%",
+        "marketCap": "1.208B"
+    },
+    {
+        "rank": 35,
+        "symbol": "APE",
+        "name": "ApeCoin",
+        "price": "3.21609116",
+        "variation": "2.86%",
+        "marketCap": "1.162B"
+    },
+    {
+        "rank": 36,
+        "symbol": "FLOW",
+        "name": "Flow",
+        "price": "1.11042956",
+        "variation": "0.19%",
+        "marketCap": "1.151B"
+    },
+    {
+        "rank": 37,
+        "symbol": "CHZ",
+        "name": "Chiliz",
+        "price": "0.18015092",
+        "variation": "−3.04%",
+        "marketCap": "1.106B"
+    },
+    {
+        "rank": 38,
+        "symbol": "HBAR",
+        "name": "Hedera",
+        "price": "0.04605748",
+        "variation": "0.95%",
+        "marketCap": "1.058B"
+    },
+    {
+        "rank": 39,
+        "symbol": "ICP",
+        "name": "Internet Computer",
+        "price": "3.694",
+        "variation": "2.98%",
+        "marketCap": "1.013B"
+    },
+    {
+        "rank": 40,
+        "symbol": "EGLD",
+        "name": "Elrond",
+        "price": "40.825446",
+        "variation": "−0.00%",
+        "marketCap": "968.362M"
+    },
+    {
+        "rank": 41,
+        "symbol": "USDP",
+        "name": "Pax Dollar",
+        "price": "1.00012",
+        "variation": "0.35%",
+        "marketCap": "945.756M"
+    },
+    {
+        "rank": 42,
+        "symbol": "TWT",
+        "name": "Trust Wallet Token",
+        "price": "2.23821920",
+        "variation": "11.90%",
+        "marketCap": "932.554M"
+    },
+    {
+        "rank": 43,
+        "symbol": "EOS",
+        "name": "EOS",
+        "price": "0.8699101",
+        "variation": "2.79%",
+        "marketCap": "935.068M"
+    },
+    {
+        "rank": 44,
+        "symbol": "LUNC",
+        "name": "Terra Classic",
+        "price": "0.000157230",
+        "variation": "4.04%",
+        "marketCap": "941.417M"
+    },
+    {
+        "rank": 45,
+        "symbol": "XCN",
+        "name": "Chain",
+        "price": "0.04180",
+        "variation": "−3.91%",
+        "marketCap": "897.562M"
+    },
+    {
+        "rank": 46,
+        "symbol": "XTZ",
+        "name": "Tezos",
+        "price": "0.95530836",
+        "variation": "0.65%",
+        "marketCap": "876.09M"
+    },
+    {
+        "rank": 47,
+        "symbol": "TUSD",
+        "name": "TrueUSD",
+        "price": "1.00191",
+        "variation": "−0.15%",
+        "marketCap": "856.274M"
+    },
+    {
+        "rank": 48,
+        "symbol": "THETA",
+        "name": "Theta Network",
+        "price": "0.8380733",
+        "variation": "1.45%",
+        "marketCap": "838.073M"
+    },
+    {
+        "rank": 49,
+        "symbol": "SAND",
+        "name": "The Sandbox",
+        "price": "0.54318315",
+        "variation": "2.02%",
+        "marketCap": "814.487M"
+    },
+    {
+        "rank": 50,
+        "symbol": "AAVE",
+        "name": "Aave",
+        "price": "55.926204",
+        "variation": "1.09%",
+        "marketCap": "788.179M"
+    },
+    {
+        "rank": 51,
+        "symbol": "HT",
+        "name": "Huobi Token",
+        "price": "4.8448",
+        "variation": "−0.34%",
+        "marketCap": "742.987M"
+    },
+    {
+        "rank": 52,
+        "symbol": "BSV",
+        "name": "Bitcoin SV",
+        "price": "38.13",
+        "variation": "2.89%",
+        "marketCap": "733.303M"
+    },
+    {
+        "rank": 53,
+        "symbol": "USDD",
+        "name": "USDD",
+        "price": "0.99561",
+        "variation": "0.47%",
+        "marketCap": "722.148M"
+    },
+    {
+        "rank": 54,
+        "symbol": "MANA",
+        "name": "Decentraland",
+        "price": "0.37809458",
+        "variation": "3.35%",
+        "marketCap": "701.397M"
+    },
+    {
+        "rank": 56,
+        "symbol": "KCS",
+        "name": "KuCoin Token",
+        "price": "6.490",
+        "variation": "−1.43%",
+        "marketCap": "638.485M"
+    },
+    {
+        "rank": 57,
+        "symbol": "MKR",
+        "name": "Maker",
+        "price": "648.540560",
+        "variation": "3.53%",
+        "marketCap": "634.033M"
+    },
+    {
+        "rank": 58,
+        "symbol": "AXS",
+        "name": "Axie Infinity",
+        "price": "6.631348",
+        "variation": "6.38%",
+        "marketCap": "637.898M"
+    },
+    {
+        "rank": 59,
+        "symbol": "ZEC",
+        "name": "Zcash",
+        "price": "39.054075",
+        "variation": "3.40%",
+        "marketCap": "615.4M"
+    },
+    {
+        "rank": 60,
+        "symbol": "GUSD",
+        "name": "Gemini Dollar",
+        "price": "1.001115",
+        "variation": "0.15%",
+        "marketCap": "611.821M"
+    },
+    {
+        "rank": 61,
+        "symbol": "BTT",
+        "name": "BitTorrent-New",
+        "price": "0.00000065",
+        "variation": "0.00%",
+        "marketCap": "614.462M"
+    },
+    {
+        "rank": 62,
+        "symbol": "MIOTA",
+        "name": "IOTA",
+        "price": "0.21007929",
+        "variation": "−2.54%",
+        "marketCap": "583.922M"
+    },
+    {
+        "rank": 63,
+        "symbol": "BIT",
+        "name": "BitDAO",
+        "price": "0.2768",
+        "variation": "0.76%",
+        "marketCap": "578.774M"
+    },
+    {
+        "rank": 64,
+        "symbol": "PAXG",
+        "name": "PAX Gold",
+        "price": "1731.54761",
+        "variation": "−0.66%",
+        "marketCap": "563.116M"
+    },
+    {
+        "rank": 65,
+        "symbol": "APT",
+        "name": "Aptos",
+        "price": "4.22477093",
+        "variation": "5.04%",
+        "marketCap": "549.22M"
+    },
+    {
+        "rank": 66,
+        "symbol": "XEC",
+        "name": "eCash",
+        "price": "0.00002839",
+        "variation": "2.09%",
+        "marketCap": "546.011M"
+    },
+    {
+        "rank": 67,
+        "symbol": "CAKE",
+        "name": "PancakeSwap",
+        "price": "3.6957130",
+        "variation": "1.68%",
+        "marketCap": "538.625M"
+    },
+    {
+        "rank": 68,
+        "symbol": "SNX",
+        "name": "Synthetix",
+        "price": "1.6574133",
+        "variation": "5.21%",
+        "marketCap": "508.042M"
+    },
+    {
+        "rank": 69,
+        "symbol": "KLAY",
+        "name": "Klaytn",
+        "price": "0.16149432",
+        "variation": "0.67%",
+        "marketCap": "487.627M"
+    },
+    {
+        "rank": 70,
+        "symbol": "NEO",
+        "name": "Neo",
+        "price": "6.531836",
+        "variation": "2.03%",
+        "marketCap": "460.748M"
+    },
+    {
+        "rank": 71,
+        "symbol": "FTM",
+        "name": "Fantom",
+        "price": "0.172850",
+        "variation": "2.83%",
+        "marketCap": "439.904M"
+    },
+    {
+        "rank": 72,
+        "symbol": "BNX",
+        "name": "BinaryX",
+        "price": "153.567479",
+        "variation": "−2.46%",
+        "marketCap": "428.052M"
+    },
+    {
+        "rank": 73,
+        "symbol": "FEI",
+        "name": "Fei USD",
+        "price": "0.9692",
+        "variation": "−5.18%",
+        "marketCap": "411.906M"
+    },
+    {
+        "rank": 74,
+        "symbol": "DASH",
+        "name": "Dash",
+        "price": "35.986146",
+        "variation": "5.65%",
+        "marketCap": "396.362M"
+    },
+    {
+        "rank": 75,
+        "symbol": "MINA",
+        "name": "Mina",
+        "price": "0.52936652",
+        "variation": "3.32%",
+        "marketCap": "396.788M"
+    },
+    {
+        "rank": 76,
+        "symbol": "NEXO",
+        "name": "Nexo",
+        "price": "0.67638228",
+        "variation": "3.00%",
+        "marketCap": "378.774M"
+    },
+    {
+        "rank": 77,
+        "symbol": "GRT",
+        "name": "The Graph",
+        "price": "0.05451466",
+        "variation": "1.51%",
+        "marketCap": "376.151M"
+    },
+    {
+        "rank": 78,
+        "symbol": "GT",
+        "name": "GateToken",
+        "price": "3.4427",
+        "variation": "0.04%",
+        "marketCap": "372.724M"
+    },
+    {
+        "rank": 79,
+        "symbol": "RUNE",
+        "name": "THORChain",
+        "price": "1.1086850",
+        "variation": "0.22%",
+        "marketCap": "366.629M"
+    },
+    {
+        "rank": 80,
+        "symbol": "ETHW",
+        "name": "ETHPoW (IOU)",
+        "price": "3.3563",
+        "variation": "−3.06%",
+        "marketCap": "360.026M"
+    },
+    {
+        "rank": 81,
+        "symbol": "LDO",
+        "name": "Lido DAO",
+        "price": "1.11234353",
+        "variation": "3.98%",
+        "marketCap": "348.109M"
+    },
+    {
+        "rank": 82,
+        "symbol": "BAT",
+        "name": "Basic Attention Token",
+        "price": "0.22095893",
+        "variation": "0.94%",
+        "marketCap": "330.484M"
+    },
+    {
+        "rank": 83,
+        "symbol": "CRV",
+        "name": "Curve DAO Token",
+        "price": "0.59254711",
+        "variation": "21.91%",
+        "marketCap": "314.988M"
+    },
+    {
+        "rank": 84,
+        "symbol": "1INCH",
+        "name": "1inch Network",
+        "price": "0.52426138",
+        "variation": "6.48%",
+        "marketCap": "322.197M"
+    },
+    {
+        "rank": 85,
+        "symbol": "GMX",
+        "name": "GMX",
+        "price": "39.929736",
+        "variation": "−5.70%",
+        "marketCap": "319.066M"
+    },
+    {
+        "rank": 86,
+        "symbol": "HNT",
+        "name": "Helium",
+        "price": "2.3717",
+        "variation": "10.97%",
+        "marketCap": "311.025M"
+    },
+    {
+        "rank": 87,
+        "symbol": "LRC",
+        "name": "Loopring",
+        "price": "0.22926893",
+        "variation": "1.33%",
+        "marketCap": "304.958M"
+    },
+    {
+        "rank": 88,
+        "symbol": "AR",
+        "name": "Arweave",
+        "price": "9.0961863",
+        "variation": "1.34%",
+        "marketCap": "303.764M"
+    },
+    {
+        "rank": 89,
+        "symbol": "XDC",
+        "name": "XDC Network",
+        "price": "0.02405100",
+        "variation": "−0.25%",
+        "marketCap": "295.948M"
+    },
+    {
+        "rank": 90,
+        "symbol": "STX",
+        "name": "Stacks",
+        "price": "0.22202865",
+        "variation": "4.86%",
+        "marketCap": "298.571M"
+    },
+    {
+        "rank": 91,
+        "symbol": "ENJ",
+        "name": "Enjin Coin",
+        "price": "0.29127116",
+        "variation": "3.40%",
+        "marketCap": "291.271M"
+    },
+    {
+        "rank": 92,
+        "symbol": "CSPR",
+        "name": "Casper",
+        "price": "0.027956",
+        "variation": "1.85%",
+        "marketCap": "294.143M"
+    },
+    {
+        "rank": 93,
+        "symbol": "ZIL",
+        "name": "Zilliqa",
+        "price": "0.02130236",
+        "variation": "2.41%",
+        "marketCap": "288.958M"
+    },
+    {
+        "rank": 94,
+        "symbol": "IMX",
+        "name": "Immutable X",
+        "price": "0.42646979",
+        "variation": "4.52%",
+        "marketCap": "289.762M"
+    },
+    {
+        "rank": 95,
+        "symbol": "OSMO",
+        "name": "Osmosis",
+        "price": "1.03003748",
+        "variation": "2.05%",
+        "marketCap": "290.949M"
+    },
+    {
+        "rank": 96,
+        "symbol": "KAVA",
+        "name": "Kava",
+        "price": "0.8806880",
+        "variation": "4.22%",
+        "marketCap": "289.564M"
+    },
+    {
+        "rank": 97,
+        "symbol": "CVX",
+        "name": "Convex Finance",
+        "price": "4.0193600",
+        "variation": "13.57%",
+        "marketCap": "283.749M"
+    },
+    {
+        "rank": 98,
+        "symbol": "XEM",
+        "name": "NEM",
+        "price": "0.03128339",
+        "variation": "−0.54%",
+        "marketCap": "281.551M"
+    },
+    {
+        "rank": 99,
+        "symbol": "DCR",
+        "name": "Decred",
+        "price": "19.321544",
+        "variation": "2.28%",
+        "marketCap": "280.651M"
+    },
+    {
+        "rank": 100,
+        "symbol": "COMP",
+        "name": "Compound",
+        "price": "37.554509",
+        "variation": "1.81%",
+        "marketCap": "272.914M"
+    },
+    {
+        "rank": 101,
+        "symbol": "ROSE",
+        "name": "Oasis Network",
+        "price": "0.04496859",
+        "variation": "3.24%",
+        "marketCap": "257.477M"
+    }
+]

@@ -9,9 +9,9 @@ export const getDollarValue = async () => {
     }
 }
 
-export const getCurrentDate = () => {
-    const current_date = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
-    return current_date;
+export const getTimestamp = () => {
+    const timestamp = new Date().getTime();
+    return timestamp;
 }
 
 export const formatDigits = (value: string): string => {
