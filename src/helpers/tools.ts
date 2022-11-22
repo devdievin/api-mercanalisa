@@ -14,8 +14,30 @@ export const getCurrentDate = () => {
     return current_date;
 }
 
-export const formatDigits = (value: number) => {
-    let digits = 0;
-    (value >= 1) ? digits = 2 : digits = 6;
-    return value.toFixed(digits);
+export const formatDigits = (value: string): string => {
+    let digits = 2;
+
+    if (Number(value) < 1) {
+        const decimals = countDecimalPoint(value);
+
+        if (decimals > 0 && decimals <= 4) {
+            digits = 4;
+        } else if (decimals > 4) {
+            digits = 8;
+        }
+    }
+
+    return (Number(value).toFixed(digits));
+}
+
+export const countDecimalPoint = (value: string) => {
+    const decimals = value.split('.')[1];
+    return decimals.length;
+}
+
+export const findLetter = (word: string) => {
+    let result = word.match(/[a-z, A-Z]/g);
+
+    let aux = word.replace(result![0], ` ${result}`);
+    return aux;
 }

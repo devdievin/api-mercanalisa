@@ -16,9 +16,6 @@ routes.get('/docs', async (req, res) => {
     res.render('docs', { url_api: process.env.URL_API, cryptos: await testFactory().recoverListCrypto() });
 });
 
-
-routes.get('/test', testFactory().execute);
-
 // Routes cryptos quote
 routes.get('/crypto/USD/:symbol', cryptoFactory().getCryptoUSD);
 routes.get('/crypto/BRL/:symbol', cryptoFactory().getCryptoBRL);
