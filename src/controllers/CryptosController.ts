@@ -3,6 +3,13 @@ import { Crypto } from '../entities/Crypto';
 import { CryptoService } from "../services/CryptoService";
 import { validateData } from '../helpers/validate';
 import { formatDigits, getCurrentDate, getDollarValue } from '../helpers/tools';
+import { Currencies } from "../helpers/currencies";
+
+interface ICryptoResponse {
+    currency: string,
+    crypto: Crypto,
+    timestamp: string
+}
 
 interface IDataProps {
     DOLAR_VALUE: number,
@@ -24,17 +31,18 @@ class CryptosController {
     getCryptoUSD = async (req: Request, res: Response) => {
         try {
             const { symbol } = req.params;
-            let crypto = data.CRYPTOS.find(crypto => crypto.symbol === symbol.toUpperCase());
+
+            let crypto = this.getCrypto(symbol);
 
             if (!validateData(crypto)) return res.status(404).json({ status: "404 - Not Found", message: "Error when looking for cryptocurrency!" });
 
-            let result = {
-                ...crypto,
-                currency: "USD",
+            const response: ICryptoResponse = {
+                currency: Currencies.USD,
+                crypto: crypto!,
                 timestamp: getCurrentDate()
             };
 
-            return res.status(200).json(result);
+            return res.status(200).json(response);
         } catch (error) {
             console.error(error);
             return res.status(500).json({ message: 'Internal Server Error', error });
@@ -44,26 +52,33 @@ class CryptosController {
     getCryptoBRL = async (req: Request, res: Response) => {
         try {
             const { symbol } = req.params;
-            let crypto = data.CRYPTOS.find(crypto => crypto.symbol === symbol.toUpperCase());
+
+            let crypto = this.getCrypto(symbol);
 
             if (!validateData(crypto)) return res.status(404).json({ status: "404 - Not Found", message: "Error when looking for cryptocurrency!" });
 
             let price = (parseFloat(crypto!.price) * data.DOLAR_VALUE);
             let marketCap = (parseFloat(crypto!.marketCap) * data.DOLAR_VALUE);
 
-            crypto!.price = formatDigits(price);
-            crypto!.marketCap = formatDigits(marketCap);
-
-            let result = {
-                ...crypto,
-                currency: "BRL",
+            const response: ICryptoResponse = {
+                currency: Currencies.BRL,
+                crypto: {
+                    ...crypto!,
+                    price: formatDigits(price.toString()),
+                    marketCap: formatDigits(marketCap.toString())
+                },
                 timestamp: getCurrentDate()
             };
-            return res.status(200).json(result);
+
+            return res.status(200).json(response);
         } catch (error) {
             console.error(error);
             return res.status(500).json({ message: 'Internal Server Error', error });
         }
+    }
+
+    getCrypto = (symbol: string) => {
+        return data.CRYPTOS.find(crypto => crypto.symbol === symbol.toUpperCase());
     }
 }
 
