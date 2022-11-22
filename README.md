@@ -3,9 +3,9 @@
 
 Api para cotação de preços de mais de 100 criptomoedas e moedas fiat. 
 
-Veja a api em funcionamento aqui: https://api-mercanalisa.herokuapp.com
+Veja a api em funcionamento aqui: https://api-mercanalisa.vercel.app
 
-![Página Principal](./src/public/images/screen0.svg "Página Principal")
+![Página Principal](./public/images/screen0.svg "Página Principal")
 
 ## Sobre
 
@@ -14,7 +14,6 @@ Mercanalisa surgiu de um projeto pessoal para estudo de conceitos e ferramentas.
 ## Features
 
 - Response em formato JSON
-- Cotação Atualizada de 5 em 5 minutos
 - Mais de 100 criptomoedas diferentes
 - Cotação das criptos em Dólar Americano e Real Brasileiro
 - Cotação fiat: Dólar Americano/Real Brasileiro
@@ -26,7 +25,7 @@ Para usar a api de cotação de criptomoedas utilize o path **/crypto** em segui
 
 Exemplo:
 ```
- https://api-mercanalisa.herokuapp.com/crypto/USD/BTC
+ https://api-mercanalisa.vercel.app/crypto/USD/BTC
 ```
 
 Tabela com algumas das criptomoedas disponíveis:
@@ -41,7 +40,7 @@ Tabela com algumas das criptomoedas disponíveis:
 | **7** | Bitcoin Cash     |     BCH     |
 |   ~   | Continua...      |     ...     |
 
-Veja a tabela completa aqui: [Tabela Criptomoedas](https://api-mercanalisa.herokuapp.com/docs).
+Veja a tabela completa aqui: [Tabela Criptomoedas](https://api-mercanalisa.vercel.app/docs).
 
 ### #Moedas Fiat
 
@@ -49,7 +48,7 @@ Para usar a api de cotação de moedas fiat utilize o path **/fiat**, em seguida
 
 Exemplo:
 ```
- https://api-mercanalisa.herokuapp.com/fiat/USD
+ https://api-mercanalisa.vercel.app/fiat/USD
 ```
 
 Tabela das moedas fiat disponíveis:
@@ -61,7 +60,7 @@ Tabela das moedas fiat disponíveis:
 
 Projeto foi construído com as seguintes tecnologias:
 
-- Javascript
+- Typescript
 - Node.js
 - Express
 - Cheerio
