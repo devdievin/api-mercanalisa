@@ -1,6 +1,4 @@
-const validateData = (data) => {
+export const validateData = (data: any) => {
     if (data === '' || data === null || data === undefined) return false;
     return true;
 }
-
-module.exports = { validateData }
