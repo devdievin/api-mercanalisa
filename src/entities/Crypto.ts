@@ -2,7 +2,7 @@ export class Crypto {
     rank: number;
     symbol: string;
     name: string;
-    price: string;
+    price: number;
     variation: string;
     marketCap: string;
 

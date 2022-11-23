@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { Crypto } from '../entities/Crypto';
 import { CryptoService } from "../services/CryptoService";
 import { validateData } from '../helpers/validate';
-import { formatDigits, getDollarValue, getTimestamp } from '../helpers/tools';
+import { convertMarketCap, formatDigits, getDollarValue, getTimestamp } from '../helpers/tools';
 import { Currencies } from "../helpers/currencies";
 
 interface ICryptoResponse {
@@ -38,7 +38,10 @@ class CryptosController {
 
             const response: ICryptoResponse = {
                 currency: Currencies.USD,
-                crypto: crypto!,
+                crypto: {
+                    ...crypto!,
+                    price: formatDigits(crypto!.price)
+                },
                 timestamp: getTimestamp()
             };
 
@@ -57,15 +60,14 @@ class CryptosController {
 
             if (!validateData(crypto)) return res.status(404).json({ status: "404 - Not Found", message: "Error when looking for cryptocurrency!" });
 
-            let price = (parseFloat(crypto!.price) * data.DOLAR_VALUE);
-            let marketCap = (parseFloat(crypto!.marketCap) * data.DOLAR_VALUE);
+            let price = (crypto!.price * data.DOLAR_VALUE);
 
             const response: ICryptoResponse = {
                 currency: Currencies.BRL,
                 crypto: {
                     ...crypto!,
-                    price: formatDigits(price.toString()),
-                    marketCap: formatDigits(marketCap.toString())
+                    price: formatDigits(price),
+                    marketCap: convertMarketCap(crypto!.marketCap, data.DOLAR_VALUE)
                 },
                 timestamp: getTimestamp()
             };
@@ -77,7 +79,7 @@ class CryptosController {
         }
     }
 
-    getCrypto = (symbol: string) => {
+    getCrypto = (symbol: string): Crypto | undefined => {
         return data.CRYPTOS.find(crypto => crypto.symbol === symbol.toUpperCase());
     }
 }

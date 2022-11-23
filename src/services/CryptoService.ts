@@ -27,7 +27,7 @@ export class CryptoService {
                     rank: parseInt(rank),
                     symbol,
                     name,
-                    price,
+                    price: parseFloat(price),
                     variation,
                     marketCap
                 }
